@@ -6,6 +6,10 @@ main {
   background-color: #F6F6F6;
 }
 
+section {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
   color: #fff;
