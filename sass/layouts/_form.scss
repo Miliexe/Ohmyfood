@@ -1,0 +1,20 @@
+// form
+
+form {
+    padding: 16px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(193,193,193,1) 0%, rgba(214,214,214,1) 5%, rgba(234,234,234,1) 12%, rgba(234,234,234,1) 100%);
+    opacity: 0.8;
+    & input{
+        background-color: transparent;
+        width: 120px;
+        border: none;
+        margin-left: 10px;
+        font-size: medium;
+    }
+    ::placeholder{
+        opacity: 1;
+    }
+}
