@@ -3,3 +3,16 @@
 body { margin: 0px; }
 
 main { background-color: $main-background;}
+
+a { text-decoration: none; color: #fff;}
+
+h1 { margin: 0px; }
+
+ul { 
+  padding: 0px;
+  & div {
+    margin-bottom: 10px;
+  }
+}
+
+li{ display: inline; margin-bottom: 30px;}
