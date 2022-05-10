@@ -15,11 +15,15 @@ main {
 }
 
 .bold {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .thin {
   font-weight: 100;
+}
+
+.medium {
+  font-size: 18px;
 }
 
 h1 {
@@ -42,13 +46,24 @@ form {
 }
 form input {
   background-color: transparent;
-  width: 120px;
+  width: 128px;
   border: none;
   margin-left: 10px;
   font-size: medium;
 }
 form ::placeholder {
+  color: #000;
   opacity: 1;
+}
+
+footer {
+  background-color: #353535;
+  height: 175px;
+  padding: 15px 30px;
+}
+
+.footer__titre {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

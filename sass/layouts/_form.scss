@@ -9,12 +9,13 @@ form {
     opacity: 0.8;
     & input{
         background-color: transparent;
-        width: 120px;
+        width: 128px;
         border: none;
         margin-left: 10px;
         font-size: medium;
     }
     ::placeholder{
+        color: #000;
         opacity: 1;
     }
 }

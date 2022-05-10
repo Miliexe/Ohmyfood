@@ -1,1 +1,14 @@
 // footer
+
+footer {
+    background-color: $footer-background;
+    height: 175px;
+    padding: 15px 30px;
+}
+
+.footer{
+    &__titre{
+        color: #fff;
+    }
+}
+    
