@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/Miliexe/Ohmyfood/issues"
   },
-  "homepage": "https://github.com/Miliexe/Ohmyfood#readme"
+  "homepage": "https://github.com/Miliexe/Ohmyfood#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.13",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.51.0"
+  }
 }
