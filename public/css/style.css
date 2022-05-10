@@ -6,6 +6,27 @@ main {
   background-color: #F6F6F6;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1 {
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+}
+ul div {
+  margin-bottom: 10px;
+}
+
+li {
+  display: inline;
+  margin-bottom: 30px;
+}
+
 .logo__font {
   font-family: "shrikhand";
 }
@@ -23,17 +44,19 @@ main {
 }
 
 .medium {
-  font-size: 18px;
-}
-
-h1 {
-  margin: 0px;
+  font-size: 20px;
 }
 
 header {
   display: flex;
   justify-content: center;
   margin: 20px 0px 10px 0px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 30px;
 }
 
 form {
@@ -58,11 +81,8 @@ form ::placeholder {
 
 footer {
   background-color: #353535;
-  height: 175px;
-  padding: 15px 30px;
-}
-
-.footer__titre {
+  height: 200px;
+  padding: 10px 30px;
   color: #fff;
 }
 
