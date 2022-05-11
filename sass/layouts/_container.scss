@@ -4,4 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 10px 30px;
+    &--center{
+        text-align: center;
+    }
 }

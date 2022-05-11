@@ -51,6 +51,17 @@ li {
   font-size: 20px;
 }
 
+.btn1 {
+  width: fit-content;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 15px 25px;
+  border-radius: 25px;
+  background: linear-gradient(180deg, rgb(238, 123, 219) 0%, rgb(163, 91, 220) 100%);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -61,6 +72,9 @@ header {
   display: flex;
   flex-wrap: wrap;
   padding: 10px 30px;
+}
+.container--center {
+  text-align: center;
 }
 
 form {
