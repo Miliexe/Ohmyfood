@@ -3,8 +3,13 @@
 .container{
     display: flex;
     flex-wrap: wrap;
-    padding: 10px 30px;
     &--center{
         text-align: center;
+    }
+    &--bg{
+        background-color: $container-bg;
+    }
+    & .padding{
+        padding: 20px 20px 25px 20px;
     }
 }
