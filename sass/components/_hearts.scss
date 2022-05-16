@@ -1,1 +1,14 @@
 // hearts
+
+.heart{
+    margin-top: -15px;
+    font-size: 22px;
+    &-icon::before{
+        content: "\f004";
+        display: none;
+    }
+    &-light::before {
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 300;
+    }
+}
