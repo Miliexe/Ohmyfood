@@ -21,8 +21,10 @@ h1, h6 {
 
 ul {
   padding: 0px;
+  display: flex;
+  flex-direction: column;
 }
-ul div {
+ul li {
   margin-bottom: 10px;
 }
 

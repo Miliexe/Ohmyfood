@@ -12,7 +12,9 @@ h1, h6 { margin: 0px;}
 
 ul { 
   padding: 0px;
-  & div {
+  display: flex;
+  flex-direction: column;
+  & li {
     margin-bottom: 10px;
   }
 }
