@@ -1,1 +1,31 @@
 // index
+
+.step{
+    box-sizing: border-box;
+    border-radius: 22px;
+    @include shadow;
+    width: auto;
+    height: 70px;
+    background-color: $main-bg;
+    padding-top: 23px;
+    margin-left: 12px;
+    margin-bottom: 20px;
+    &__number{
+        width: 24px;
+        height: 21px;
+        padding-top: 3px;
+        border-radius: 100%;
+        background-color: $primary;
+        margin-left: -12px;
+        color: white;
+        text-align: center; 
+    }
+    &__icon{
+        margin: 0px 22px;
+        font-size: large;
+        opacity: 0.6;
+    }
+    &__title{
+        margin-top: 2px;
+    }
+}
