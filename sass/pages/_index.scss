@@ -2,18 +2,18 @@
 
 .step{
     box-sizing: border-box;
-    border-radius: 22px;
     @include shadow;
     width: auto;
     height: 70px;
+    border-radius: 22px;
     background-color: $main-bg;
-    padding-top: 23px;
     margin-left: 12px;
     margin-bottom: 20px;
     &__number{
         width: 24px;
         height: 21px;
         padding-top: 3px;
+        margin-top: 23px;
         border-radius: 100%;
         background-color: $primary;
         margin-left: -12px;
@@ -21,11 +21,26 @@
         text-align: center; 
     }
     &__icon{
-        margin: 0px 22px;
+        height: 45px;
+        padding-top: 25px;
+        padding-left: 22px;
         font-size: large;
         opacity: 0.6;
     }
     &__title{
-        margin-top: 2px;
+        height: 45px;
+        padding-top: 25px;
+        padding-left: 20px;
+    }
+    :hover{
+        background-color: lighten($primary, 35%);
+        border-radius: 22px;
+        & .step__number{
+            background-color: $primary;
+        }
+        & .step__icon{
+        color: $primary;
+        opacity: 1;
+        }
     }
 }
