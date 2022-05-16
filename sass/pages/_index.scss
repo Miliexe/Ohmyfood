@@ -44,3 +44,50 @@
         }
     }
 }
+
+.restaurant{
+    display: flex;
+    width: auto;
+    height: 260px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: #fff;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    @include shadow;
+    &__picture{
+        height: 80%;
+        width: 100%;
+        & img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px 15px 0px 0px;
+        }
+    }
+    &__title{
+        width: 80%;
+        padding-left: 15px;
+        font-size: large;
+        padding-top: 10px;
+    }
+    &__location{
+        width: 80%;
+        padding-left: 15px;
+    }
+    &--new{
+        @include shadow;
+        position: absolute;
+        box-sizing: border-box;
+        width: 78px;
+        height: 28px;
+        right: 35px;
+        margin-top: 15px;
+        border-radius: 2px;
+        background-color: $tertiary;
+        text-align: center;
+        color: darken($tertiary, 40%);
+        font-size: 14px;
+        padding-top: 6px;
+    }
+}
