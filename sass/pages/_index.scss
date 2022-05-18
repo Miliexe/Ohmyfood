@@ -55,6 +55,11 @@
     padding-bottom: 15px;
     margin-bottom: 20px;
     @include shadow;
+    & .container{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+    }
     &__picture{
         height: 80%;
         width: 100%;
@@ -66,14 +71,19 @@
         }
     }
     &__title{
-        width: 80%;
-        padding-left: 15px;
+        position: relative;
+        left: 15px;
         font-size: large;
         padding-top: 10px;
     }
     &__location{
-        width: 80%;
-        padding-left: 15px;
+        position: relative;
+        left: 15px;
+    }
+    &__heart{
+        position: absolute;
+        margin-top: 213px;
+        right: 45px;
     }
     &--new{
         @include shadow;
