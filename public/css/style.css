@@ -193,8 +193,9 @@ footer a {
 
 .restaurant {
   display: flex;
-  width: auto;
+  width: 100%;
   height: 260px;
+  position: relative;
   box-sizing: border-box;
   border-radius: 15px;
   background-color: #fff;
@@ -233,7 +234,7 @@ footer a {
 .restaurant__heart {
   position: absolute;
   margin-top: 213px;
-  right: 45px;
+  right: 25px;
 }
 .restaurant--new {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -241,7 +242,7 @@ footer a {
   box-sizing: border-box;
   width: 78px;
   height: 28px;
-  right: 35px;
+  right: 15px;
   margin-top: 15px;
   border-radius: 2px;
   background-color: #99E2D0;
@@ -249,6 +250,31 @@ footer a {
   color: #278870;
   font-size: 14px;
   padding-top: 6px;
+}
+.restaurant--mobile {
+  box-sizing: border-box;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+@media screen and (min-width: 576px) {
+  .restaurant--tablet {
+    flex-direction: column;
+    width: 47%;
+    float: right;
+    margin-right: 2.8%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .restaurant {
+    height: 220px;
+    margin-bottom: 6%;
+  }
+  .restaurant__heart {
+    margin-top: 177px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
