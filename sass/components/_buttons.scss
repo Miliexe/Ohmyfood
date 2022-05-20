@@ -10,6 +10,10 @@
     background: linear-gradient(180deg, rgba(238,123,219,1) 0%, rgba(163,91,220,1) 100%);
     color: white;
     @include shadow;
+    &:hover{
+        @include shadow-hover;
+        background: linear-gradient(180deg, lighten(rgba(238,123,219,1), 2%) 0%, lighten(rgba(163,91,220,1), 2%) 100%);
+    }
     & a{
         color: #fff;
     }

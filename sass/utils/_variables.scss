@@ -14,7 +14,12 @@ $footer-background: #353535;
 
 // Breakpoints
 
+$mobile: 350px;
+$tablet: 576px;
+$desktop: 992px;
+
 $breakpoints: (
-  tablet: 576px,
-  desktop: 992px
+  mobile: $mobile,
+  tablet: $tablet,
+  desktop: $desktop
 );

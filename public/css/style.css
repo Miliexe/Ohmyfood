@@ -1,6 +1,11 @@
 body {
   margin: 0px;
 }
+@media screen and (min-width: 0px) {
+  body {
+    min-width: 350px;
+  }
+}
 
 main {
   background-color: #F6F6F6;
@@ -63,6 +68,10 @@ li {
   background: linear-gradient(180deg, rgb(238, 123, 219) 0%, rgb(163, 91, 220) 100%);
   color: white;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn1:hover {
+  box-shadow: 0px 0px 10px rgba(24, 9, 42, 0.8);
+  background: linear-gradient(180deg, #ef84dd 0%, #a863de 100%);
 }
 .btn1 a {
   color: #fff;
@@ -163,14 +172,15 @@ footer a {
   padding-top: 25px;
   padding-left: 20px;
 }
-.step :hover {
+.step:hover {
+  cursor: pointer;
   background-color: #f2eafb;
   border-radius: 22px;
 }
-.step :hover .step__number {
+.step:hover .step__number {
   background-color: #9356DC;
 }
-.step :hover .step__icon {
+.step:hover .step__icon {
   color: #9356DC;
   opacity: 1;
 }
@@ -185,6 +195,9 @@ footer a {
   padding-bottom: 15px;
   margin-bottom: 20px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.restaurant:hover {
+  box-shadow: 0px 0px 10px rgba(24, 9, 42, 0.8);
 }
 .restaurant .container {
   flex-wrap: nowrap;

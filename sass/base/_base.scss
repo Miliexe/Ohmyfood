@@ -1,6 +1,11 @@
 // base
 
-body { margin: 0px; }
+body {
+  margin: 0px;
+  @include mq(0px){
+    min-width: $mobile;
+  } 
+}
 
 main { background-color: $main-bg; }
 

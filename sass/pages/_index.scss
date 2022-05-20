@@ -32,7 +32,8 @@
         padding-top: 25px;
         padding-left: 20px;
     }
-    :hover{
+    &:hover{
+        cursor: pointer;
         background-color: lighten($primary, 35%);
         border-radius: 22px;
         & .step__number{
@@ -55,6 +56,9 @@
     padding-bottom: 15px;
     margin-bottom: 20px;
     @include shadow;
+    &:hover{
+        @include shadow-hover;
+    }
     & .container{
         flex-wrap: nowrap;
         flex-direction: column;
