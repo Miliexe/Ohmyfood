@@ -8,4 +8,25 @@ footer {
     & a{
         color: #fff;
     }
+    @include mq(tablet){
+        height: 150px;
+    }
+}
+
+.footer{
+    &__title{
+        font-size: large;
+        @include mq(tablet){
+            text-align: center;
+            font-size: x-large;
+        }
+    }
+    &--right{
+        @include mq(tablet){
+            position: absolute;
+            right: 38px;
+            text-align: right;
+            margin-top: -60px;
+        }
+    }
 }

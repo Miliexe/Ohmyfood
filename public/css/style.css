@@ -28,6 +28,7 @@ ul {
   padding: 0px;
   display: flex;
   flex-direction: column;
+  margin: 0px;
 }
 ul li {
   margin-bottom: 10px;
@@ -137,6 +138,29 @@ footer {
 }
 footer a {
   color: #fff;
+}
+@media screen and (min-width: 576px) {
+  footer {
+    height: 150px;
+  }
+}
+
+.footer__title {
+  font-size: large;
+}
+@media screen and (min-width: 576px) {
+  .footer__title {
+    text-align: center;
+    font-size: x-large;
+  }
+}
+@media screen and (min-width: 576px) {
+  .footer--right {
+    position: absolute;
+    right: 38px;
+    text-align: right;
+    margin-top: -60px;
+  }
 }
 
 .step {
