@@ -3,12 +3,16 @@
 .step{
     box-sizing: border-box;
     @include shadow;
-    width: auto;
+    width: 100%;
     height: 70px;
     border-radius: 22px;
     background-color: $main-bg;
     margin-left: 12px;
     margin-bottom: 20px;
+    @include mq(tablet){
+        width: 46.5%;
+        margin-right: auto;
+    }
     &__number{
         width: 24px;
         height: 21px;
