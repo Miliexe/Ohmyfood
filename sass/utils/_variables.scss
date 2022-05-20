@@ -10,3 +10,16 @@ $tertiary: #99E2D0;
 $main-bg: #F6F6F6;
 $container-bg: #FFFFFF;
 $footer-background: #353535;
+
+
+// Breakpoints
+
+$mobile: 350px;
+$tablet: 576px;
+$desktop: 992px;
+
+$breakpoints: (
+  mobile: $mobile,
+  tablet: $tablet,
+  desktop: $desktop
+);

@@ -3,12 +3,16 @@
 .step{
     box-sizing: border-box;
     @include shadow;
-    width: auto;
+    width: 100%;
     height: 70px;
     border-radius: 22px;
     background-color: $main-bg;
     margin-left: 12px;
     margin-bottom: 20px;
+    @include mq(tablet){
+        width: 46.5%;
+        margin-right: auto;
+    }
     &__number{
         width: 24px;
         height: 21px;
@@ -32,7 +36,8 @@
         padding-top: 25px;
         padding-left: 20px;
     }
-    :hover{
+    &:hover{
+        cursor: pointer;
         background-color: lighten($primary, 35%);
         border-radius: 22px;
         & .step__number{
@@ -47,14 +52,23 @@
 
 .restaurant{
     display: flex;
-    width: auto;
+    width: 100%;
     height: 260px;
+    position: relative;
     box-sizing: border-box;
     border-radius: 15px;
     background-color: #fff;
     padding-bottom: 15px;
     margin-bottom: 20px;
     @include shadow;
+    &:hover{
+        @include shadow-hover;
+    }
+    & .container{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+    }
     &__picture{
         height: 80%;
         width: 100%;
@@ -66,14 +80,19 @@
         }
     }
     &__title{
-        width: 80%;
-        padding-left: 15px;
+        position: relative;
+        left: 15px;
         font-size: large;
         padding-top: 10px;
     }
     &__location{
-        width: 80%;
-        padding-left: 15px;
+        position: relative;
+        left: 15px;
+    }
+    &__heart{
+        position: absolute;
+        margin-top: 213px;
+        right: 25px;
     }
     &--new{
         @include shadow;
@@ -81,7 +100,7 @@
         box-sizing: border-box;
         width: 78px;
         height: 28px;
-        right: 35px;
+        right: 15px;
         margin-top: 15px;
         border-radius: 2px;
         background-color: $tertiary;
@@ -89,5 +108,28 @@
         color: darken($tertiary, 40%);
         font-size: 14px;
         padding-top: 6px;
+    }
+    &--mobile{
+        box-sizing: border-box;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    &--tablet{
+        @include mq(tablet){
+            flex-direction: column;
+            width: 47%;
+            float: right;
+            margin-right: 2.8%;
+        }
+    }
+    @include mq(tablet){
+        height: 220px;
+        margin-bottom: 6%;
+        &__heart{
+            margin-top: 177px;
+        }
     }
 }

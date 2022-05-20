@@ -1,6 +1,11 @@
 // base
 
-body { margin: 0px; }
+body {
+  margin: 0px;
+  @include mq(0px){
+    min-width: $mobile;
+  } 
+}
 
 main { background-color: $main-bg; }
 
@@ -14,6 +19,7 @@ ul {
   padding: 0px;
   display: flex;
   flex-direction: column;
+  margin: 0px;
   & li {
     margin-bottom: 10px;
   }
