@@ -119,15 +119,14 @@
     }
     &--tablet{
         @include mq(tablet){
-            flex-direction: column;
             width: 47%;
-            float: right;
-            margin-right: 2.8%;
+            margin: auto;
+            margin-bottom: 3.2%;
         }
     }
     @include mq(tablet){
         height: 220px;
-        margin-bottom: 6%;
+        margin: 0px;
         &__heart{
             margin-top: 177px;
         }
