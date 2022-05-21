@@ -154,12 +154,18 @@ footer a {
     font-size: x-large;
   }
 }
+.footer__content {
+  width: 100%;
+}
 @media screen and (min-width: 576px) {
-  .footer--right {
-    position: absolute;
-    right: 38px;
-    text-align: right;
-    margin-top: -60px;
+  .footer__content {
+    width: 50%;
+  }
+  .footer__content .tablet-c-reverse {
+    flex-direction: column-reverse;
+  }
+  .footer__content--end {
+    text-align: end;
   }
 }
 
@@ -285,16 +291,15 @@ footer a {
 }
 @media screen and (min-width: 576px) {
   .restaurant--tablet {
-    flex-direction: column;
     width: 47%;
-    float: right;
-    margin-right: 2.8%;
+    margin: auto;
+    margin-bottom: 3.2%;
   }
 }
 @media screen and (min-width: 576px) {
   .restaurant {
     height: 220px;
-    margin-bottom: 6%;
+    margin: 0px;
   }
   .restaurant__heart {
     margin-top: 177px;
