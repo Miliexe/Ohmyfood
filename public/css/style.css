@@ -109,6 +109,16 @@ header {
 .container .padding {
   padding: 20px 20px 25px 20px;
 }
+@media screen and (min-width: 576px) {
+  .container .padding {
+    padding-left: 6%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container .padding {
+    padding-left: 3%;
+  }
+}
 
 form {
   padding: 16px;
@@ -142,6 +152,12 @@ footer a {
 @media screen and (min-width: 576px) {
   footer {
     height: 150px;
+    padding: 10px 6%;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer {
+    padding: 10px 3%;
   }
 }
 
@@ -185,6 +201,11 @@ footer a {
     margin-right: auto;
   }
 }
+@media screen and (min-width: 992px) {
+  .step {
+    width: 31%;
+  }
+}
 .step__number {
   width: 24px;
   height: 21px;
@@ -199,14 +220,14 @@ footer a {
 .step__icon {
   height: 45px;
   padding-top: 25px;
-  padding-left: 22px;
+  padding-left: 5%;
   font-size: large;
   opacity: 0.6;
 }
 .step__title {
   height: 45px;
   padding-top: 25px;
-  padding-left: 20px;
+  padding-left: 6%;
 }
 .step:hover {
   cursor: pointer;
@@ -294,6 +315,13 @@ footer a {
     width: 47%;
     margin: auto;
     margin-bottom: 3.2%;
+    margin-left: 0px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurant--desktop {
+    margin-bottom: 2%;
+    width: 31.5%;
   }
 }
 @media screen and (min-width: 576px) {

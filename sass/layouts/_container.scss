@@ -11,5 +11,11 @@
     }
     & .padding{
         padding: 20px 20px 25px 20px;
+        @include mq (tablet){
+            padding-left: 6%;
+        }
+        @include mq(desktop){
+            padding-left: 3%;
+        }
     }
 }
