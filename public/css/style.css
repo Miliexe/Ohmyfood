@@ -102,6 +102,7 @@ header {
 }
 .container--center {
   text-align: center;
+  padding: 20px 45px;
 }
 .container--bg {
   background-color: #FFFFFF;
