@@ -1,6 +1,11 @@
 // typography
 
-.logo__font{ font-family: 'shrikhand'; }
+.logo__font{ 
+    font-family: 'shrikhand';
+    @include mq(desktop){
+        font-size: 45px;
+    }
+}
 
 * { font-family: 'roboto'; }
 

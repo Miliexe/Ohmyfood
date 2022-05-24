@@ -42,6 +42,11 @@ li {
 .logo__font {
   font-family: "shrikhand";
 }
+@media screen and (min-width: 992px) {
+  .logo__font {
+    font-size: 45px;
+  }
+}
 
 * {
   font-family: "roboto";
@@ -333,6 +338,15 @@ footer a {
   .restaurant__heart {
     margin-top: 177px;
   }
+}
+
+.menu__restaurant {
+  width: 100%;
+}
+.menu__restaurant img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
