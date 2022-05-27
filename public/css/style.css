@@ -351,6 +351,9 @@ footer a {
   border-radius: 36px 36px 0px 0px;
   background-color: #F6F6F6;
 }
+.menu__step {
+  margin-top: 35px;
+}
 .menu .heart {
   position: absolute;
   right: 40px;
@@ -384,18 +387,27 @@ footer a {
   margin: 0px;
 }
 .menu__item p {
+  position: absolute;
+  max-width: 80%;
   margin: 2px 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__item-price {
   position: absolute;
   right: 10px;
-  bottom: 3px;
+  top: 25px;
   font-weight: 500;
 }
 .menu__item-animation {
   width: 0%;
   height: 0px;
   background-color: red;
+}
+.menu .btn1 {
+  margin: 45px auto;
+  padding: 15px 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

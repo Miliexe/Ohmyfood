@@ -16,6 +16,9 @@
         border-radius: 36px 36px 0px 0px;
         background-color: $main-bg;
     }
+    &__step{
+        margin-top: 35px;
+    }
     & .heart{
         position: absolute;
         right: 40px;
@@ -48,12 +51,17 @@
             margin: 0px;
         }
         & p{
+            position: absolute;
+            max-width: 80%;
             margin: 2px 0px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         &-price{
             position: absolute;
             right: 10px;
-            bottom: 3px;
+            top: 25px;
             font-weight: 500;
         }
         &-animation{
@@ -61,5 +69,9 @@
             height: 0px;
             background-color: red;
         }
+    }
+    & .btn1{
+        margin: 45px auto;
+        padding: 15px 50px;
     }
     }
