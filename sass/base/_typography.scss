@@ -1,6 +1,6 @@
 // typography
 
-.logo__font{ 
+.logo-font{ 
     font-family: 'shrikhand';
     @include mq(desktop){
         font-size: 45px;
@@ -12,5 +12,3 @@
 .bold { font-weight: 500; }
 
 .thin { font-weight: 100; }
-
-.medium { font-size: 20px;}
