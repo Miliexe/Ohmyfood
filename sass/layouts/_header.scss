@@ -4,4 +4,22 @@ header {
     display: flex;
     justify-content: center;
     margin: 20px 0px 10px 0px;
+    position: relative;
+}
+
+.header{
+    &__title{
+        @include mq(desktop){
+            font-size: 45px;
+        }
+    }   
+    &__back-arrow{
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 22px;
+        & a{
+            color: lighten($color: #000000, $amount: 22%);
+        }
+    }
 }

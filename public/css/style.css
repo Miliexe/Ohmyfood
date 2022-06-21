@@ -42,11 +42,6 @@ li {
 .logo-font {
   font-family: "shrikhand";
 }
-@media screen and (min-width: 992px) {
-  .logo-font {
-    font-size: 45px;
-  }
-}
 
 * {
   font-family: "roboto";
@@ -95,6 +90,22 @@ header {
   display: flex;
   justify-content: center;
   margin: 20px 0px 10px 0px;
+  position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .header__title {
+    font-size: 45px;
+  }
+}
+.header__back-arrow {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 22px;
+}
+.header__back-arrow a {
+  color: #383838;
 }
 
 .container {
