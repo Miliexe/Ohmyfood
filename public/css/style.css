@@ -77,13 +77,11 @@ li {
 .heart {
   font-size: 22px;
 }
-.heart-icon::before {
-  content: "\f004";
-  display: none;
-}
-.heart-light::before {
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 300;
+.heart-full {
+  background: linear-gradient(0deg, rgb(238, 123, 219) 0%, rgb(163, 91, 220) 100%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 header {
@@ -204,9 +202,9 @@ footer a:hover {
     text-align: end;
   }
 }
-.footer__content .svg-inline--fa {
-  width: 22px;
-  margin-right: 5px;
+.footer__content .fas {
+  background-size: 16px;
+  margin-right: 6px;
 }
 
 .step {
@@ -310,6 +308,22 @@ footer a:hover {
   position: absolute;
   margin-top: 213px;
   right: 25px;
+}
+.restaurant__heart .far {
+  position: absolute;
+  margin-top: 1px;
+}
+.restaurant__heart .fas {
+  position: relative;
+  z-index: 0;
+  opacity: 0;
+}
+.restaurant__heart:hover .far {
+  color: transparent;
+}
+.restaurant__heart:hover .fas {
+  transition: opacity 400ms;
+  opacity: 1;
 }
 .restaurant--new {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
