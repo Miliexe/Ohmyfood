@@ -347,6 +347,9 @@ footer a {
   }
 }
 
+.menu {
+  background-color: #fff;
+}
 .menu__restaurant {
   width: 100%;
 }
@@ -355,15 +358,38 @@ footer a {
   height: 250px;
   object-fit: cover;
 }
+@media screen and (min-width: 992px) {
+  .menu__restaurant img {
+    height: 400px;
+  }
+}
 .menu__card {
+  position: relative;
   width: 100%;
+  max-width: 1313.65px;
+  margin: auto;
   margin-top: -40px;
   padding: 10px 20px;
   border-radius: 36px 36px 0px 0px;
   background-color: #F6F6F6;
 }
+.menu__card .container {
+  width: 100%;
+  flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  .menu__card .container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .menu__step {
   margin-top: 35px;
+}
+@media screen and (min-width: 992px) {
+  .menu__step {
+    width: 31%;
+  }
 }
 .menu .heart {
   position: absolute;
@@ -396,6 +422,10 @@ footer a {
   font-size: large;
   font-weight: 500;
   margin: 0px;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__item p {
   position: absolute;

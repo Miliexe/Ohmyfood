@@ -1,23 +1,41 @@
 // menus
 
 .menu{
+    background-color: #fff;
     &__restaurant{
         width: 100%;
         & img{
             width: 100%;
             height: 250px;
             object-fit: cover;
+            @include mq(desktop){
+                height: 400px;
+            }
         }
     }
     &__card{
+        position: relative;
         width: 100%;
+        max-width: 1313.65px;
+        margin: auto;
         margin-top: -40px;
         padding: 10px 20px;
         border-radius: 36px 36px 0px 0px;
         background-color: $main-bg;
+        & .container{
+            width: 100%;
+            flex-direction: column;
+            @include mq(desktop){
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
     }
     &__step{
         margin-top: 35px;
+        @include mq(desktop){
+            width: 31%;
+        }
     }
     & .heart{
         position: absolute;
@@ -49,6 +67,10 @@
             font-size: large;
             font-weight: 500;
             margin: 0px;
+            max-width: 80%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         & p{
             position: absolute;
