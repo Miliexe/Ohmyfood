@@ -42,11 +42,6 @@ li {
 .logo-font {
   font-family: "shrikhand";
 }
-@media screen and (min-width: 992px) {
-  .logo-font {
-    font-size: 45px;
-  }
-}
 
 * {
   font-family: "roboto";
@@ -95,6 +90,22 @@ header {
   display: flex;
   justify-content: center;
   margin: 20px 0px 10px 0px;
+  position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .header__title {
+    font-size: 45px;
+  }
+}
+.header__back-arrow {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 22px;
+}
+.header__back-arrow a {
+  color: #383838;
 }
 
 .container {
@@ -148,8 +159,14 @@ footer {
   padding: 10px 20px;
   color: #fff;
 }
+footer .container {
+  justify-content: center;
+}
 footer a {
   color: #fff;
+}
+footer a:hover {
+  color: #9356DC;
 }
 @media screen and (min-width: 576px) {
   footer {
@@ -174,6 +191,7 @@ footer a {
 }
 .footer__content {
   width: 100%;
+  max-width: 894.42px;
 }
 @media screen and (min-width: 576px) {
   .footer__content {
@@ -185,6 +203,10 @@ footer a {
   .footer__content--end {
     text-align: end;
   }
+}
+.footer__content .svg-inline--fa {
+  width: 22px;
+  margin-right: 5px;
 }
 
 .step {
@@ -336,6 +358,9 @@ footer a {
   }
 }
 
+.menu {
+  background-color: #fff;
+}
 .menu__restaurant {
   width: 100%;
 }
@@ -344,15 +369,38 @@ footer a {
   height: 250px;
   object-fit: cover;
 }
+@media screen and (min-width: 992px) {
+  .menu__restaurant img {
+    height: 400px;
+  }
+}
 .menu__card {
+  position: relative;
   width: 100%;
+  max-width: 1313.65px;
+  margin: auto;
   margin-top: -40px;
   padding: 10px 20px;
   border-radius: 36px 36px 0px 0px;
   background-color: #F6F6F6;
 }
+.menu__card .container {
+  width: 100%;
+  flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  .menu__card .container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .menu__step {
   margin-top: 35px;
+}
+@media screen and (min-width: 992px) {
+  .menu__step {
+    width: 31%;
+  }
 }
 .menu .heart {
   position: absolute;
@@ -385,6 +433,10 @@ footer a {
   font-size: large;
   font-weight: 500;
   margin: 0px;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__item p {
   position: absolute;

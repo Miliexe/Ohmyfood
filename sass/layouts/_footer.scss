@@ -5,8 +5,14 @@ footer {
     height: 200px;
     padding: 10px 20px;
     color: #fff;
+    & .container{
+        justify-content: center;
+    }
     & a{
         color: #fff;
+        &:hover{
+            color: $primary;
+        }
     }
     @include mq(tablet){
         height: 150px;
@@ -27,6 +33,7 @@ footer {
     }
     &__content{
         width: 100%;
+        max-width: 894.42px;
         @include mq(tablet){
             width: 50%;
             & .tablet-c-reverse{
@@ -35,6 +42,10 @@ footer {
             &--end{
                 text-align: end;
             }
+        }
+        & .svg-inline--fa{
+            width: 22px;
+            margin-right: 5px;
         }
     }
 }
