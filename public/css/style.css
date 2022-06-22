@@ -159,8 +159,14 @@ footer {
   padding: 10px 20px;
   color: #fff;
 }
+footer .container {
+  justify-content: center;
+}
 footer a {
   color: #fff;
+}
+footer a:hover {
+  color: #9356DC;
 }
 @media screen and (min-width: 576px) {
   footer {
@@ -185,6 +191,7 @@ footer a {
 }
 .footer__content {
   width: 100%;
+  max-width: 894.42px;
 }
 @media screen and (min-width: 576px) {
   .footer__content {
@@ -196,6 +203,10 @@ footer a {
   .footer__content--end {
     text-align: end;
   }
+}
+.footer__content .svg-inline--fa {
+  width: 22px;
+  margin-right: 5px;
 }
 
 .step {
