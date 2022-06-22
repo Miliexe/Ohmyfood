@@ -420,6 +420,23 @@ footer a:hover {
   position: absolute;
   right: 40px;
   margin-top: 24px;
+  font-size: 24px;
+}
+.menu .heart .far {
+  position: absolute;
+  margin-top: 1px;
+}
+.menu .heart .fas {
+  position: relative;
+  z-index: 0;
+  opacity: 0;
+}
+.menu .heart:hover .far {
+  color: transparent;
+}
+.menu .heart:hover .fas {
+  transition: opacity 400ms;
+  opacity: 1;
 }
 .menu-underline {
   display: block;

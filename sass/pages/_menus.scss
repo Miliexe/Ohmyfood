@@ -41,6 +41,25 @@
         position: absolute;
         right: 40px;
         margin-top: 24px;
+        font-size: 24px;
+        & .far{
+            position: absolute;
+            margin-top: 1px;
+        }
+        & .fas{
+            position: relative;
+            z-index: 0;
+            opacity: 0;
+        }
+        &:hover{
+            .far{
+                color: transparent;
+            }
+            .fas{
+                transition: opacity 400ms;  
+                opacity: 1; 
+            }
+        }
     }
     &-underline{
         display: block;
