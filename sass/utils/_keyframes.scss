@@ -1,1 +1,10 @@
 // keyframes
+
+//Fade in
+
+@-webkit-keyframes fade-in{
+    0%   { display: block; opacity: 0;  }
+    30% { display: block; opacity: .5; }
+    60% { display: block; opacity: .8; }
+    100% { display: block; opacity: 1; } 
+}
