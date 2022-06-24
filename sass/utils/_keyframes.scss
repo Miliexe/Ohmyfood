@@ -3,6 +3,17 @@
 //Fade in
 
 @-webkit-keyframes fade-in{
+   
+    //slide effect
+    from{
+        margin-top: 30px;
+        margin-bottom: -20px;
+    }
+    to {
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    // fade effect
     0%   { display: block; opacity: 0;  }
     30% { display: block; opacity: .5; }
     60% { display: block; opacity: .8; }
