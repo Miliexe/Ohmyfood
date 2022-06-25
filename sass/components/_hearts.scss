@@ -2,12 +2,10 @@
 
 .heart{
     font-size: 22px;
-    &-icon::before{
-        content: "\f004";
-        display: none;
-    }
-    &-light::before {
-        font-family: "Font Awesome 5 Pro";
-        font-weight: 300;
+    &-full{
+        background: linear-gradient(0deg, rgba(238,123,219,1) 0%, rgba(163,91,220,1) 100%);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
     }
 }
