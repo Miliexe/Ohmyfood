@@ -7,3 +7,15 @@
     60%  {display: block; opacity: .8;}
     100% {display: block; opacity: 1; position: relative; top: 0px;} 
 }
+
+@-webkit-keyframes show{
+
+    0% {display: block; position: relative; width: 0%;}
+    100% {display: block; position: relative; width: 20%;}
+}
+
+@-webkit-keyframes hide{
+
+    0% {display: block; position: relative; width: 100%;}
+    100% {display: block; position: relative; width: 80%;}
+}
