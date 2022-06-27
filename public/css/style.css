@@ -588,9 +588,8 @@ footer a:hover {
   }
 }
 @media screen and (min-width: 992px) {
-  .menu__card h2 {
-    position: relative;
-    left: 10px;
+  .menu .name {
+    padding-left: 10px;
   }
 }
 .menu__step {
