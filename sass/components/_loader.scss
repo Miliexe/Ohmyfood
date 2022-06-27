@@ -3,7 +3,6 @@
 .loader{
     display: flex;
     justify-content: center;
-    width: 100%;
     &__background{
         display:flex;
         width: 100%;
@@ -12,8 +11,17 @@
         z-index: 1;
         justify-content :center ;
         align-items: center;
-        background: linear-gradient(180deg, rgba($primary, .8) 0%, rgba($secondary, .8) 50%, rgba($tertiary, .8) 100%);
+        background: linear-gradient(180deg, $primary 0%, $secondary 50%, $tertiary 100%);
+        animation: fade-out 1s 2s ease-out forwards;
+    }
+    &__logo{
+        position: absolute;
+        display: flex;
+        font-size: 55px;
+        z-index: 10;
+        animation: color-change 3s 0s ease-out forwards;
+        @include mq(tablet){
+            animation: color-change2 3s 0s ease-out forwards;
+        }
     }
 }
-   
-  
