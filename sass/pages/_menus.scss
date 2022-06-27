@@ -128,6 +128,12 @@
             position: absolute;
             right: 0;
             animation: show-revert .5s 0s ease-out forwards;
+            & .fas{
+                color: #fff;
+                font-size: 25px;
+                margin: auto;
+                animation: spin-revert .5s 0s ease-out forwards;
+            }
         }
         &:hover{
             .menu__item-contain{
@@ -136,6 +142,9 @@
             .menu__item-animation{
                 animation: show .5s 0s ease-out forwards;
                 right: 0px;
+            }
+            .fas{
+                animation: spin .5s 0s ease-out forwards;
             }
         }
         &-title{

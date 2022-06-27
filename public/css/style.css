@@ -68,6 +68,22 @@
     width: 100%;
   }
 }
+@-webkit-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin-revert {
+  0% {
+    -moz-transform: rotate(360deg);
+  }
+  100% {
+    -moz-transform: rotate(0deg);
+  }
+}
 body {
   margin: 0px;
 }
@@ -577,12 +593,21 @@ footer a:hover {
   right: 0;
   animation: show-revert 0.5s 0s ease-out forwards;
 }
+.menu__item-animation .fas {
+  color: #fff;
+  font-size: 25px;
+  margin: auto;
+  animation: spin-revert 0.5s 0s ease-out forwards;
+}
 .menu__item:hover .menu__item-contain {
   animation: hide 0.5s 0s ease-out forwards;
 }
 .menu__item:hover .menu__item-animation {
   animation: show 0.5s 0s ease-out forwards;
   right: 0px;
+}
+.menu__item:hover .fas {
+  animation: spin 0.5s 0s ease-out forwards;
 }
 .menu__item-title {
   font-size: large;
