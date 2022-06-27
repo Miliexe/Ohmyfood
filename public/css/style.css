@@ -44,6 +44,30 @@
     width: 80%;
   }
 }
+@-webkit-keyframes show-revert {
+  0% {
+    display: block;
+    position: relative;
+    width: 20%;
+  }
+  100% {
+    display: block;
+    position: relative;
+    width: 0%;
+  }
+}
+@-webkit-keyframes hide-revert {
+  0% {
+    display: block;
+    position: relative;
+    width: 80%;
+  }
+  100% {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+}
 body {
   margin: 0px;
 }
@@ -504,35 +528,36 @@ footer a:hover {
   opacity: 0;
 }
 .menu__item.i01 {
-  animation: fade-in 1s 0.2s ease-out forwards;
-}
-.menu__item.i02 {
   animation: fade-in 1s 0.4s ease-out forwards;
 }
-.menu__item.i03 {
+.menu__item.i02 {
   animation: fade-in 1s 0.6s ease-out forwards;
 }
-.menu__item.i04 {
-  animation: fade-in 1s 1s ease-out forwards;
+.menu__item.i03 {
+  animation: fade-in 1s 0.8s ease-out forwards;
 }
-.menu__item.i05 {
+.menu__item.i04 {
   animation: fade-in 1s 1.2s ease-out forwards;
 }
-.menu__item.i06 {
+.menu__item.i05 {
   animation: fade-in 1s 1.4s ease-out forwards;
 }
-.menu__item.i07 {
-  animation: fade-in 1s 1.8s ease-out forwards;
+.menu__item.i06 {
+  animation: fade-in 1s 1.6s ease-out forwards;
 }
-.menu__item.i08 {
+.menu__item.i07 {
   animation: fade-in 1s 2s ease-out forwards;
 }
-.menu__item.i09 {
+.menu__item.i08 {
   animation: fade-in 1s 2.2s ease-out forwards;
+}
+.menu__item.i09 {
+  animation: fade-in 1s 2.4s ease-out forwards;
 }
 .menu__item-contain {
   width: 100%;
   display: flex;
+  animation: hide-revert 0.5s 0s ease-out forwards;
 }
 .menu__item-content {
   display: flex;
@@ -550,6 +575,7 @@ footer a:hover {
   width: 0%;
   position: absolute;
   right: 0;
+  animation: show-revert 0.5s 0s ease-out forwards;
 }
 .menu__item:hover .menu__item-contain {
   animation: hide 0.5s 0s ease-out forwards;

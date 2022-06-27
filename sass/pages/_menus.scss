@@ -80,35 +80,36 @@
         @include shadow;
         opacity: 0;
         &.i01{
-            animation: fade-in 1s .2s ease-out forwards;
+            animation: fade-in 1s .4s ease-out forwards;
         }
         &.i02{
-          animation: fade-in 1s .4s ease-out forwards;
-        }
-        &.i03{
           animation: fade-in 1s .6s ease-out forwards;
         }
+        &.i03{
+          animation: fade-in 1s .8s ease-out forwards;
+        }
         &.i04{
-          animation: fade-in 1s 1s ease-out forwards;
+          animation: fade-in 1s 1.2s ease-out forwards;
         }
         &.i05{
-            animation: fade-in 1s 1.2s ease-out forwards;
-        }
-        &.i06{
             animation: fade-in 1s 1.4s ease-out forwards;
         }
-        &.i07{
-            animation: fade-in 1s 1.8s ease-out forwards;
+        &.i06{
+            animation: fade-in 1s 1.6s ease-out forwards;
         }
-        &.i08{
+        &.i07{
             animation: fade-in 1s 2s ease-out forwards;
         }
-        &.i09{
+        &.i08{
             animation: fade-in 1s 2.2s ease-out forwards;
+        }
+        &.i09{
+            animation: fade-in 1s 2.4s ease-out forwards;
         }
         &-contain{
             width: 100%;
             display: flex;
+            animation: hide-revert .5s 0s ease-out forwards;
         }
         &-content{
             display: flex;
@@ -126,6 +127,7 @@
             width: 0%;
             position: absolute;
             right: 0;
+            animation: show-revert .5s 0s ease-out forwards;
         }
         &:hover{
             .menu__item-contain{

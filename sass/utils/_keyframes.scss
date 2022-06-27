@@ -19,3 +19,15 @@
     0% {display: block; position: relative; width: 100%;}
     100% {display: block; position: relative; width: 80%;}
 }
+
+@-webkit-keyframes show-revert{
+
+    0% {display: block; position: relative; width: 20%;}
+    100% {display: block; position: relative; width: 0%;}
+}
+
+@-webkit-keyframes hide-revert{
+
+    0% {display: block; position: relative; width: 80%;}
+    100% {display: block; position: relative; width: 100%;}
+}
