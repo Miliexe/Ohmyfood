@@ -148,15 +148,20 @@
         }
         &-description{
             margin: 2px 0px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            & p{
+                position: absolute;
+                max-width: 80%;
+                top: 18px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
         &-price{
             position: relative;
-            align-self: end;
             font-weight: 500;
             margin-right: 15px;
+            top: 18px;
         }
     }
     & .btn1{

@@ -594,15 +594,20 @@ footer a:hover {
 }
 .menu__item-description {
   margin: 2px 0px;
+}
+.menu__item-description p {
+  position: absolute;
+  max-width: 80%;
+  top: 18px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu__item-price {
   position: relative;
-  align-self: end;
   font-weight: 500;
   margin-right: 15px;
+  top: 18px;
 }
 .menu .btn1 {
   margin: 60px auto;
