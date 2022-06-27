@@ -31,6 +31,11 @@
             }
         }
     }
+    & .name{
+        @include mq(desktop){
+            padding-left: 10px;
+        }
+    }
     &__step{
         margin-bottom: 35px;
         @include mq(desktop){
@@ -69,74 +74,108 @@
         background-color: $tertiary;
     }
     &__item{
-        flex-direction: column;
-        width: auto;
+        display: flex;
         box-sizing: border-box;
+        width: 100%;
         height: 65px;
         margin-top: 15px;
-        padding: 10px;
         border-radius: 15px;
         background-color: #fff;
+        overflow: hidden;
         @include shadow;
         opacity: 0;
         &.i01{
-            animation: fade-in 1s .2s ease-out forwards;
+            animation: fade-in 1s .4s ease-out forwards;
         }
         &.i02{
-          animation: fade-in 1s .4s ease-out forwards;
-        }
-        &.i03{
           animation: fade-in 1s .6s ease-out forwards;
         }
+        &.i03{
+          animation: fade-in 1s .8s ease-out forwards;
+        }
         &.i04{
-          animation: fade-in 1s 1s ease-out forwards;
+          animation: fade-in 1s 1.2s ease-out forwards;
         }
         &.i05{
-            animation: fade-in 1s 1.2s ease-out forwards;
-        }
-        &.i06{
             animation: fade-in 1s 1.4s ease-out forwards;
         }
-        &.i07{
-            animation: fade-in 1s 1.8s ease-out forwards;
+        &.i06{
+            animation: fade-in 1s 1.6s ease-out forwards;
         }
-        &.i08{
+        &.i07{
             animation: fade-in 1s 2s ease-out forwards;
         }
-        &.i09{
+        &.i08{
             animation: fade-in 1s 2.2s ease-out forwards;
         }
-        &-content{
-            width: 100%;
-            position: relative;
+        &.i09{
+            animation: fade-in 1s 2.4s ease-out forwards;
         }
-        & h2{
+        &-contain{
+            width: 100%;
+            display: flex;
+            animation: hide-revert .5s 0s ease-out forwards;
+        }
+        &-content{
+            display: flex;
+            width: 100%;
+            margin: 10px;
+            flex-direction: column;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &-animation{
+            height: inherit;
+            background-color: #99e2d0;
+            display: flex;
+            width: 0%;
+            position: absolute;
+            right: 0;
+            animation: show-revert .5s 0s ease-out forwards;
+            & .fas{
+                color: #fff;
+                font-size: 25px;
+                margin: auto;
+                animation: spin-revert .5s 0s ease-out forwards;
+            }
+        }
+        &:hover{
+            .menu__item-contain{
+                animation: hide .5s 0s ease-out forwards;
+            }
+            .menu__item-animation{
+                animation: show .5s 0s ease-out forwards;
+                right: 0px;
+            }
+            .fas{
+                animation: spin .5s 0s ease-out forwards;
+            }
+        }
+        &-title{
             font-size: large;
             font-weight: 500;
             margin: 0px;
-            max-width: 80%;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        & p{
-            position: absolute;
-            max-width: 80%;
+        &-description{
             margin: 2px 0px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            & p{
+                position: absolute;
+                max-width: 80%;
+                top: 18px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
         &-price{
-            position: absolute;
-            right: 10px;
-            top: 25px;
+            position: relative;
             font-weight: 500;
-        }
-        &-animation{
-            width: 0%;
-            height: 0px;
-            background-color: red;
+            margin-right: 15px;
+            top: 18px;
         }
     }
     & .btn1{
@@ -144,4 +183,4 @@
         margin-top: 15px;
         padding: 15px 50px;
     }
-    }
+}
