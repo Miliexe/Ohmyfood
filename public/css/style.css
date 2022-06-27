@@ -587,6 +587,12 @@ footer a:hover {
     justify-content: space-around;
   }
 }
+@media screen and (min-width: 992px) {
+  .menu__card h2 {
+    position: relative;
+    left: 10px;
+  }
+}
 .menu__step {
   margin-bottom: 35px;
 }

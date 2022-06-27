@@ -30,6 +30,12 @@
                 justify-content: space-around;
             }
         }
+        & h2{
+            @include mq(desktop){
+                position: relative;
+                left: 10px;
+            }
+        }
     }
     &__step{
         margin-bottom: 35px;
