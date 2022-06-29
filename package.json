@@ -6,7 +6,7 @@
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/css/style_compressed.css --style compressed",
     "sass1": "sass --watch ./sass/main.scss:./public/css/style.css",
-    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+    "prefix": "postcss ./public/css/style_compressed.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
     "type": "git",
