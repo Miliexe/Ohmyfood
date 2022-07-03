@@ -1,8 +1,6 @@
 //utils
 @import "./utils/variables";
-@import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/extentions";
 @import "./utils/keyframes";
 
 //vendors
@@ -18,7 +16,6 @@
 
 //layouts
 @import "./layouts/header";
-@import "./layouts/nav";
 @import "./layouts/container";
 @import "./layouts/form";
 @import "./layouts/footer";
@@ -26,5 +23,3 @@
 //pages
 @import "./pages/index";
 @import "./pages/menus";
-
-//themes
