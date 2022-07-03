@@ -100,36 +100,10 @@
   90% {
     opacity: 1;
     top: 20px;
-    font-size: 32px;
   }
   100% {
     opacity: 0;
     top: 20px;
-    font-size: 32px;
-  }
-}
-@-webkit-keyframes color-change2 {
-  0% {
-    color: #fff;
-    top: 38%;
-  }
-  40% {
-    top: 45%;
-    color: #000;
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-    top: 20px;
-    font-size: 45px;
-  }
-  100% {
-    opacity: 0;
-    top: 20px;
-    font-size: 45px;
   }
 }
 @-webkit-keyframes fade-out {
@@ -253,13 +227,13 @@ li {
 .loader__logo {
   position: absolute;
   display: flex;
-  font-size: 55px;
+  font-size: 32px;
   z-index: 10;
   animation: color-change 3s 0s ease-out forwards;
 }
 @media screen and (min-width: 576px) {
   .loader__logo {
-    animation: color-change2 3s 0s ease-out forwards;
+    font-size: 45px;
   }
 }
 
@@ -270,7 +244,7 @@ header {
   position: relative;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 576px) {
   .header__title {
     font-size: 45px;
   }

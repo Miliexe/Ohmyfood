@@ -9,7 +9,7 @@ header {
 
 .header{
     &__title{
-        @include mq(desktop){
+        @include mq(tablet){
             font-size: 45px;
         }
     }   

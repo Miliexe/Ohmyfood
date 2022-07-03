@@ -49,16 +49,8 @@
     0%{color: #fff; top: 38%;}
     40%{top: 45%; color: #000; opacity: 1;}
     70%{opacity: 1;}
-    90%{opacity: 1; top: 20px; font-size: 32px;}
-    100%{opacity: 0; top:20px; font-size: 32px;}
-}
-
-@-webkit-keyframes color-change2{
-    0%{color: #fff; top: 38%;}
-    40%{top: 45%; color: #000; opacity: 1;}
-    70%{opacity: 1;}
-    90%{opacity: 1; top: 20px; font-size: 45px;}
-    100%{opacity: 0; top:20px; font-size: 45px;}
+    90%{opacity: 1; top: 20px;}
+    100%{opacity: 0; top:20px;}
 }
 
 @-webkit-keyframes fade-out{
