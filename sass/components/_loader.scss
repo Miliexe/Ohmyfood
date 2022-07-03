@@ -17,11 +17,11 @@
     &__logo{
         position: absolute;
         display: flex;
-        font-size: 55px;
-        z-index: 10;
-        animation: color-change 3s 0s ease-out forwards;
+        font-size: 32px;
+        z-index: 10; 
         @include mq(tablet){
-            animation: color-change2 3s 0s ease-out forwards;
+            font-size: 45px;
         }
+        animation: color-change 3s 0s ease-out forwards;
     }
 }
